@@ -5,6 +5,8 @@ permalink: /publications/
 author_profile: true
 ---
 
+You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+
 ## Peer-reviewed Journal Articles
 
 - **2024** (with Andrew Simpson). *Floating quantifiers, specificity, and focus in Lalo Yi*. *Journal of East Asian Linguistics*, 33, 71–113. [https://doi.org/10.1007/s10831-023-09272-8](https://doi.org/10.1007/s10831-023-09272-8)
