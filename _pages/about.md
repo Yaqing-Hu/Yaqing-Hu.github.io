@@ -8,5 +8,8 @@ redirect_from:
 ---
 
 ---
-About Me
+Research Overview
 ---
+- **Interests**: Semantics, Semantics-Syntax Interface, Comparative Syntax
+- **Themes**: Gradable Adjectives, Definiteness, Specificity, Evidentiality, Imperatives
+
