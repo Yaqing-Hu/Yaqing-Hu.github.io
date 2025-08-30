@@ -36,20 +36,12 @@
       {% if author.email %}
         <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
       {% endif %}
-      
-      {% raw %}{% assign a = page.author | default: site.author %}
-      {% if a.links and a.links.size > 0 %}
-        {% for link in a.links %}
-          <li>
-            <a href="{{ link.url | relative_url }}" target="_blank" rel="noopener">
-              {% if link.icon %}
-                <i class="{{ link.icon }}" aria-hidden="true"></i>
-              {% endif %}
-              <span class="label">{{ link.label }}</span>
-            </a>
-          </li>
-        {% endfor %}
-      {% endif %}{% endraw %}
+      {% raw %}<li>
+  <a href="{{ '/files/Yaqing_Hu_CV.pdf' | relative_url }}" target="_blank" rel="noopener">
+    <i class="fas fa-fw fa-file-pdf icon-pad-right" aria-hidden="true"></i>CV
+  </a>
+</li>{% endraw %}
+
 
 
 
