@@ -33,7 +33,7 @@ author:
   
   links:
     - label: "CV"
-      icon: "https://yaqing-hu.github.io/files/icons8-cv-100.png"
+      icon: "fas fa-fw fa-file-pdf"
       url: "/files/Yaqing_Hu_CV.pdf"
       
   # Academic websites
