@@ -36,11 +36,22 @@
       {% if author.email %}
         <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
       {% endif %}
-      {% raw %}<li>
-        <a href="{{ '/files/Yaqing_Hu_CV.pdf' | relative_url }}" target="_blank" rel="noopener">
-        <i class="fas fa-fw fa-file-pdf icon-pad-right" aria-hidden="true"></i>CV
-        </a>
-        </li>{% endraw %}
+{% raw %}{% if author.links and author.links.size > 0 %}
+  {% for link in author.links %}
+    <li>
+      {% assign href = link.url %}
+      {% if href contains '://' %}
+        <a href="{{ href }}" target="_blank" rel="noopener">
+      {% else %}
+        <a href="{{ href | relative_url }}" target="_blank" rel="noopener">
+      {% endif %}
+        {% if link.icon %}<i class="{{ link.icon }} icon-pad-right"></i>{% endif %}
+        <span class="label">{{ link.label }}</span>
+      </a>
+    </li>
+  {% endfor %}
+{% endif %}{% endraw %}
+
 
       <!-- Font Awesome and Academicons icons / Academic websites -->
       {% if author.academia %}
