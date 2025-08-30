@@ -34,7 +34,7 @@ author:
   links:
     - label: "CV"
       icon: "https://yaqing-hu.github.io/files/icons8-cv-100.png"
-      url: "https://raw.githubusercontent.com/Yaqing-Hu/Yaqing-Hu.github.io/master/files/Yaqing_Hu_CV.pdf"
+      url: "/files/Yaqing_Hu_CV.pdf"
       
   # Academic websites
   academia         : # URL
